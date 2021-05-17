@@ -6,9 +6,9 @@ def config():
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--consumption", default="./sample_data/consumption.csv", help="input the consumption data path")
-    parser.add_argument("--generation", default="./sample_data/generation.csv", help="input the generation data path")
-    parser.add_argument("--bidresult", default="./sample_data/bidresult.csv", help="input the bids result path")
+    parser.add_argument("--consumption", default="./data/consumption.csv", help="input the consumption data path")
+    parser.add_argument("--generation", default="./data/generation.csv", help="input the generation data path")
+    parser.add_argument("--bidresult", default="./data/bidresult.csv", help="input the bids result path")
     parser.add_argument("--output", default="output.csv", help="output the bids path")
 
     return parser.parse_args()
